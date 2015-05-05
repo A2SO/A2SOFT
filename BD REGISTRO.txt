@@ -1,0 +1,6 @@
+create database registro;
+use database registro;
+
+create table partida(id_partida primary key autoincrement, puntaje int  , fecha date, id_usuario foreign key);
+create table usuario(id_usuario primary key autoincrement, nombre_usuario varchar(20), correo varchar (20), id_tipousu foreign key);
+create table tipo_usuario(id_tipousu primary key autoincrement, nombre_tipousuario varchar (20)); 
